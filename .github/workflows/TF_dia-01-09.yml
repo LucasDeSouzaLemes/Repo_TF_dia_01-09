@@ -5,10 +5,10 @@ name: TF sobre a aula de Workflows
 on:
   # Executa em todo push para a branch 'main'
   push:
-    branches: [ "main" ]
-  
-  paths-ignore:
-  - README.md
+    branches:  
+    - main
+    paths-ignore:
+    - README.md
   
   # Permite que o workflow seja executado manualmente a partir da interface do GitHub
   workflow_dispatch:
@@ -26,5 +26,5 @@ jobs:
         run: echo "6324582 - Lucas de Souza Lemes"
       - name: Mostra o diretório de trabalho
         run: pwd
-      - name: Lista os arquivos no diretório home
-        run: ls ~
+      - name: inprime o nome do repositório
+        run: echo "Nome do repositório ${{gitHub.repository}}"
