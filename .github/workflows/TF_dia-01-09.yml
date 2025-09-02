@@ -26,5 +26,5 @@ jobs:
         run: echo "6324582 - Lucas de Souza Lemes"
       - name: Mostra o diretório de trabalho
         run: pwd
-      - name: inprime o nome do repositório
+      - name: imprime o nome do repositório
         run: echo "Nome do repositório ${{gitHub.repository}}"
